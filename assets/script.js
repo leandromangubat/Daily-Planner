@@ -23,21 +23,19 @@ $(document).ready(function () {
     }
 
     var currentHour = dayjs().hour();
-
+    //Shifts the block colors to their appropriate time
     $(".time-block").each(changeCurrent);
     
     function changeCurrent(){
-        var hour = parseInt($(this).attr("id").split("-")[1]);
+        var hour = parseInt($(this).attr("id").split("hour-")[1]);
         if (hour < currentHour){
-            $(this).addClass("past").removeClass("present", "future");
+            $(this).addClass("past");
         }else if (hour == currentHour){
-            $(this).addClass("present").removeClass("past", "future");
+            $(this).addClass("present");
         }else{
-            $(this).addClass("future").removeClass("past", "present");
+            $(this).addClass("future");
         }
     }
-
-    
     
     console.log(currentDate);
     var currentDate = dayjs().format("dddd, MMMM D, YYYY");
