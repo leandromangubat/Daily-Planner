@@ -58,3 +58,24 @@ body {
     transition: all 0.3s ease-in-out;
   }
   
+  .morning{
+    background-image:url("./Morning\ Image.jpeg");
+    background-size:cover;
+    background-position:center;
+  }
+
+  .afternoon{
+    background-image:url("./Afternoon\ Image.jpg");
+    background-size:cover;
+    background-position:center;
+    color: white;
+  }
+
+  .night{
+    background-image:url("./Night\ Image.jpeg");
+    background-size:cover;
+    background-position:center;
+    color: white;
+  }
+
+  

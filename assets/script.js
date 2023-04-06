@@ -3,6 +3,8 @@
 // in the html
 
 $(document).ready(function () {
+
+    
     //saves content 
     $('.saveBtn').on("click", saveDate);
     
@@ -36,10 +38,27 @@ $(document).ready(function () {
             $(this).addClass("future");
         }
     }
-    
-    console.log(currentDate);
+
     var currentDate = dayjs().format("dddd, MMMM D, YYYY");
     $("#currentDay").text(currentDate);
+    
+
+    //Header has appropriate background displaying outdoors
+    var headerBg = $("#outDoor");
+     headerBackground();
+     function headerBackground(){
+        if (currentHour < 10){
+            headerBg.addClass("morning");
+        }else if (currentHour > 10 && currentHour < 15){
+            headerBg.addClass("afternoon");
+        }else if (currentHour > 15 && currentHour < 21){
+            headerBg.addClass("night");
+        }else {
+            headerBg.addClass("night");
+        }
+        
+     }
+
 });
 
 
