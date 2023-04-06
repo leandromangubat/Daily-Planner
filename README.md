@@ -10,3 +10,4 @@ Each block will have a save icon on the right side of the block. The save icon w
 As time passes on, blocks will change color depending on the hour.
 
 ## Links
+https://leandromangubat.github.io/Daily-Planner/

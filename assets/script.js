@@ -43,7 +43,7 @@ $(document).ready(function () {
     $("#currentDay").text(currentDate);
     
 
-    //Header has appropriate background displaying outdoors
+    //Header has appropriate background displaying outdoors for current time
     var headerBg = $("#outDoor");
      headerBackground();
      function headerBackground(){
